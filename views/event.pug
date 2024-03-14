@@ -1,0 +1,19 @@
+extends layout.pug 
+
+block content 
+    .wrapper 
+        .event-block
+            h1 All Events 
+
+            if deleted 
+                p.error Deleted
+
+
+            if events.length
+                each event in events 
+                    .event-wrapper
+                        a.event(href=`/event/${ event.id }`) #{event.title}
+                        a.delete(href=`/event/${ event.id }/delete`)  delete
+
+            else 
+                p No posts yet

@@ -1,0 +1,13 @@
+extends layout.pug 
+
+block content 
+    .wrapper 
+        .archive-block
+            if events.length
+                each event in events 
+                    .archive-wrapper
+                        h1.archive #{event.title}
+                        p.archive-description #{event.description}
+
+            else 
+                p No posts yet
