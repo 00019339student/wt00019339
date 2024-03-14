@@ -5,7 +5,7 @@
 To run local:
 1. Clone repository
 ```bash
-git clone 
+git clone https://github.com/00019339student/wt00019339.git
 ```
 2. Install dependencies
 ```bash
